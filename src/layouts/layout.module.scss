@@ -1,0 +1,13 @@
+.layout {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    background: red;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    width: 1200px;
+    margin: auto;
+}
