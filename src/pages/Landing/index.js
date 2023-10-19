@@ -1,16 +1,18 @@
 // import { Layout, Menu, Divider, Row, Col } from 'antd';
 import React from 'react';
-
+import { motion } from 'framer-motion';
 import { Col, Typography, Row, Space, Button, Divider } from 'antd';
 import styles from './landing.module.scss';
-
+import Typewriter from '../../component/Typewriter';
+import menuImg from '../../common/images/menu.jpeg';
+const { Text } = Typography;
 const Home = () => {
     return (
-        <Row className={styles.content - intro}>
-            <Col span={12} className={styles.intro - left}>
-                <Space direction="vertical" className={styles.intro - container}>
-                    <div className={styles.container - left}></div>
-                    <Space className={styles.container - right}>
+        <Row className={styles.contentIntro}>
+            <Col span={12} className={styles.introLeft}>
+                <Space direction="vertical" className={styles.introContainer}>
+                    <div className={styles.containerLeft}></div>
+                    <Space className={styles.containerRight}>
                         <Text className={styles.text}>content.intro-1</Text>
                         <Text className={styles.text}>
                             <Typewriter text="blabla" delay={100} />
@@ -24,7 +26,7 @@ const Home = () => {
                     </Space>
                 </Space>
             </Col>
-            <Col span={12} className={styles.intro - right}>
+            <Col span={12} className={styles.introRight}>
                 <motion.div
                     className={styles.box}
                     initial={{ opacity: 0, scale: 0.1 }}
